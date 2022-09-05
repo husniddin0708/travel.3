@@ -1,0 +1,1325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: n_text;
+    src: url(./fonts/netflix_sans/NetflixSansRegular.ttf);
+}
+
+@font-face {
+    font-family: h_text;
+    src: url(./fonts/helvetica/Helvetica.ttf);
+}
+
+.site {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    height: 841.82px;
+    width: 100%;
+    background-image: url(./images/bgImage1.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 20% 50%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 85px;
+}
+
+.navbar p {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    font-family: h_text;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: h_text;
+    opacity: 0.7;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.showcase {
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.showcase .title {
+    width: 759px;
+    font-family: h_text;
+    font-weight: 700;
+    font-size: 72px;
+    color: #FFFFFF;
+}
+
+.input {
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(32px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.input input {
+    width: 225px;
+    border: none;
+    height: 25px;
+    background: rgba(189, 188, 188, 0.137);
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: h_text;
+}
+
+.input input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: h_text;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+.i_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 147px;
+    height: 44px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: h_text;
+}
+.i_card_block{
+    display: flex;
+}
+.input button {
+    color: #2659C3;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: h_text;
+    width: 147px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: none;
+}
+
+.card_father {
+    display: grid;
+    grid-template-columns: repeat(10, 63px);
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.card_father .card {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: h_text;
+    opacity: 0.4;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.showcase .min_title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}
+
+.header .h_title {
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    width: 90%;
+    height: 45px;
+}
+
+.position_card {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    width: 90%;
+    justify-content: space-between;
+    position: absolute;
+    bottom: -20%;
+    left: 5%;
+}
+
+.position_card .card {
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.position_card .card img {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.position_card .card p {
+    position: absolute;
+    left: 10%;
+    bottom: 17%;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: n_text;
+    color: #FFFFFF;
+}
+
+.qora {
+    box-shadow: 10px 10px 100px rgb(124, 6, 153);
+    width: 100%;
+    height: 105px;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+
+.tomonlar {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 500px;
+}
+
+.tomonlar p {
+    width: 90%;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 750px;
+    width: 90%;
+    justify-content: space-around;
+    row-gap: 50px;
+}
+
+.cards .card {
+    width: 750px;
+    height: 258px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(158, 158, 158, 0.25);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards .card .right .title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    font-family: n_text;
+}
+
+.cards .card .right .ant {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.5;
+    font-family: n_text;
+}
+
+.cards .card .right {
+    width: 350px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.cards .card .right button {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    font-family: n_text;
+    background: #2659C3;
+    border-radius: 32px;
+    width: 140px;
+    height: 52px;
+    border: none;
+}
+
+.tomonlar2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 800px;
+}
+
+.tomonlar2 p {
+    width: 90%;
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+}
+
+.cards2 {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: space-between;
+}
+
+.cards2 .card {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.cards2 .card img {
+    width: 280px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.cards2 .card p {
+    position: absolute;
+    left: 8%;
+    bottom: 14%;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: n_text;
+    color: #FFFFFF;
+}
+
+.tomonlar2 .left {
+    width: 90%;
+}
+
+.tomonlar2 .left_block {
+    width: 1127px;
+    height: 395px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./images/bgImage2.png);
+    background-size: cover;
+    border-radius: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 50px;
+    flex-direction: column;
+    padding-left: 100px
+}
+
+.tomonlar2 .left_block .title {
+    font-weight: 700;
+    font-size: 56px;
+    color: #fff;
+    width: 678.8px;
+}
+
+.tomonlar2 .left_block .ant {
+    font-weight: 400;
+    font-size: 32px;
+    color: #fff;
+}
+
+.tomonlar3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+}
+
+.tomonlar3 .main_title {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+    color: #000;
+    width: 90%;
+}
+
+.cards3 {
+    width: 90%;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 343px 343px;
+    row-gap: 50px;
+}
+
+.cards3 .card {
+    width: 343px;
+    height: 343px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards3 .card .matn {
+    width: 280px;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cards3 .card .ant {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+    font-family: n_text;
+    opacity: 0.5;
+}
+
+.cards3 .card .title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    font-family: n_text;
+}
+
+.tomonlar4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 800px;
+}
+
+.tomonlar4 .main_title {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+    color: #000;
+    width: 90%;
+}
+
+.cards4 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards4 .card {
+    width: 342px;
+    height: 549px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(158, 158, 158, 0.25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.cards4 .card .main_img {
+    width: 310px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+.cards4 .card .name {
+    width: 310px;
+    height: 59px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards4 .card .name .left {
+    width: 118px;
+    height: 59px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards4 .card .name .n_title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000;
+    font-family: n_text;
+}
+
+.cards4 .card .name .n_ant {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.5;
+    color: #000;
+    font-family: n_text;
+}
+
+.cards4 .card .name .right p {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    font-family: n_text;
+}
+
+.cards4 .card .name .right {
+    width: 68px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards4 .card .i_block {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    height: 47px;
+}
+
+.cards4 .card .i_block .ch_card {
+    width: 64px;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards4 .card .i_block .ch_card p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000000;
+    opacity: 0.5;
+    font-family: n_text;
+}
+
+.cards4 .card .i_block .ch_card img {
+    opacity: 0.5;
+}
+
+.cards4 .card ul {
+    list-style: none;
+    width: 310px;
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cards4 .card ul li p {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: n_text;
+    color: #000;
+    opacity: 0.5;
+}
+
+.cards4 .card .narx {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 31px;
+}
+
+.cards4 .card .narx .delete {
+    text-decoration: line-through 1px solid #000;
+    opacity: 0.5;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: n_text;
+    color: #000;
+    width: 63px;
+}
+
+.cards4 .card .narx .now_cost {
+    font-weight: 700;
+    font-size: 24px;
+    color: #000;
+    font-family: n_text;
+    display: flex;
+    align-items: flex-end;
+    width: 210px;
+}
+
+.cards4 .card .narx span {
+    font-weight: 400;
+    font-size: 12px;
+    color: #000;
+    opacity: 0.5;
+}
+
+.tomonlar5 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 800px;
+}
+
+.tomonlar5 .main_title {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+    color: #000;
+    width: 90%;
+}
+
+.cards4 .bg_card {
+    width: 342px;
+    height: 549px;
+    background: url(./images/bgImage3.png);
+    box-shadow: 0px 0px 100px rgb(38, 192, 231);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cards4 .bg_card .title {
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    font-family: n_text;
+    width: 300px;
+}
+
+.cards4 .bg_card .ant {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    font-family: n_text;
+    width: 300px;
+}
+
+.cards4 .bg_card .bush {
+    width: 300px;
+    height: 100px;
+}
+
+.cards4 .bg_card .matn {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tomonlar6 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 800px;
+}
+
+.tomonlar6 .main_title {
+    font-weight: 700;
+    font-size: 32px;
+    font-family: h_text;
+    color: #000;
+    width: 90%;
+}
+
+.last_tomon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(./images/bg_image4.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.input2 {
+    width: 462px;
+    height: 58px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(32px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.input2 input {
+    width: 225px;
+    border: none;
+    height: 25px;
+    background: rgba(189, 188, 188, 0.137);
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: h_text;
+}
+
+.input2 input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: h_text;
+}
+
+.input2 input:focus {
+    outline: none;
+}
+
+.input2 button {
+    color: #2659C3;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: h_text;
+    width: 188px;
+    height: 42px;
+    background: #FFFFFF;
+    border-radius: 32px;
+    border: none;
+}
+
+.input_button .button button {
+    width: 91px;
+    height: 39px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(32px);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    font-family: h_text;
+    border-radius: 16px;
+    border: none;
+}
+.input_button .button  a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: h_text;
+}
+
+.last_tomon .right .title {
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+    font-family: h_text;
+}
+.last_tomon .right{
+    width: 45%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.last_tomon .right .ant {
+    font-weight: 400;
+    font-size: 24px;
+    font-family: h_text;
+    color: #fff;
+}
+
+.input_button p{
+    font-weight: 400;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: h_text;
+}
+
+.input_button{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.input_button .button{
+    width: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.last_tomon .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 300px;
+    width: 25%;
+}
+
+
+@media only screen and (max-width: 1920px) {
+    .site{
+        height: 7800px;
+    }
+    .header {
+        background-size: cover;
+    }
+    .cards {
+        grid-template-columns: 750px 750px;
+    }
+    .cards3 {
+        width: 90%;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 343px 343px 343px 343px;
+        row-gap: 50px;
+    }
+    .cards4 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .position_card .card{
+        box-shadow: 0px 0px 50px rgb(124, 6, 153);
+    }
+}
+@media only screen and (max-width: 1746px){
+    .cards {
+        grid-template-columns: 750px ;
+    }
+    .site{
+        height: 8100px;
+    }
+    .tomonlar{
+        height: 800px;
+    }
+}
+@media only screen and (max-width: 1653px){
+    .cards3 {
+        width: 90%;
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: 343px 343px;
+        row-gap: 50px;
+        height: 800px;
+    }
+    .tomonlar3{
+        height: 1000px;
+    }
+    .site{
+        height: 8500px;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .cards4 {
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 1301px){
+    .position_card {
+        grid-template-columns: repeat(2, 280px);
+        width: 70%;
+        justify-content: space-between;
+        position: absolute;
+        bottom: -50%;
+        left: 15%;
+        row-gap: 50px;
+        height: 450px;
+    }
+    .site{
+        height: 9200px;
+    }
+    .tomonlar{
+        margin-top: 400px;
+    }
+    .cards2 {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2, 280px);
+        justify-content: space-around;
+        row-gap: 50px;
+    }
+    .tomonlar2 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 1200px;
+    }
+}
+@media only screen and (max-width: 1253px){
+    .tomonlar2 .left_block {
+        width: 750px;
+        height: 350px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./images/bgImage2.png);
+        background-size: cover;
+        border-radius: 24px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 50px;
+        flex-direction: column;
+        padding-left: 100px
+    }
+    .tomonlar2 .left {
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
+@media only screen and (max-width: 1181px){
+    .cards4 {
+        width: 750px;
+        height: 1000px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .tomonlar4{
+        height: 1300px;
+    }
+    .tomonlar5{
+        height: 1300px;
+    }
+    .tomonlar6{
+        height: 1300px;
+    }
+    .site{
+        height: 12800px;
+    }
+    .card_father {
+        display: grid;
+        grid-template-columns: repeat(5, 63px);
+        height: 180px;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .input {
+        width: 70%;
+        height: 400px;
+        backdrop-filter: blur(1px);
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-self: center;
+    }
+    .header{
+        height:1400px;
+    }
+    .showcase{
+        height: 1000px;
+    }
+    .position_card {
+        grid-template-columns: repeat(2, 280px);
+        width: 70%;
+        justify-content: space-between;
+        position: absolute;
+        bottom: -30%;
+        left: 15%;
+        row-gap: 50px;
+        height: 450px;
+    }
+    .last_tomon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 800px;
+    }
+    .last_tomon .right{
+        width: 90%;
+        height: 450px;
+    }
+    .last_tomon .left{
+        flex-direction: row;
+        width: 45%;
+        height: 150px;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 919px){
+    .last_tomon .left{
+        flex-direction: row;
+        width: 55%;
+        height: 150px;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 821px){
+    .showcase .title {
+        width: 90%;
+    }
+    .position_card {
+        grid-template-columns: repeat(1, 280px);
+        width: 310px;
+        justify-content: space-between;
+        position: absolute;
+        bottom: -83%;
+        left: 35%;
+        row-gap: 50px;
+        height: 1200px;
+        
+    }
+    .position_card .card{
+        box-shadow: 0px 0px 50px rgb(124, 6, 153);
+    }
+    .qora{
+        box-shadow: 10px 10px 100px rgb(124, 6, 153);
+    }
+    .site{
+        height: 17200px;
+    }
+    .tomonlar{
+        margin-top: 1000px;
+    }
+    .navbar {
+        grid-template-columns: 20% 70%;
+    }
+    .cards .card {
+        width: 310px;
+        height: 500px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(158, 158, 158, 0.25);
+        flex-direction: column;
+    }
+    .cards .card img{
+        width: 280px;
+    }
+    .cards .card .right .title {
+        font-size: 20px;
+    }
+    
+    .cards .card .right .ant {
+        font-size: 14px;
+    }
+    
+    .cards .card .right {
+        width: 280px;
+        height: 210px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 310px;
+        width: 310px;
+        justify-content: space-around;
+        row-gap: 50px;
+    }
+    .tomonlar {
+        width: 100%;
+        height: 1300px;
+    }
+    .tomonlar2{
+        height: 2000px;
+    }
+    .tomonlar3{
+        height: 1800px;
+    }
+    .cards2 {
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(1, 280px);
+        justify-content: space-around;
+        row-gap: 50px;
+        height: 1200px;
+    }
+    .cards3 {
+        width: 310px;
+        grid-template-columns: 310px;
+        height: 1550px;
+    }
+    .cards3 .card {
+        width: 310px;
+    }
+    .cards3 .card img{
+        width: 280px;
+    }
+    
+    .cards3 .card .matn {
+        width: 280px;
+    }
+    
+    .cards3 .card .ant {
+        font-size: 14px;
+    }
+    
+    .cards3 .card .title {
+        font-size: 20px;
+    }
+    .tomonlar2 .left_block {
+        width: 500px;
+        height: 310px;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(./images/bgImage2.png);
+        background-size: cover;
+        border-radius: 24px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        row-gap: 20px;
+        flex-direction: column;
+        padding-left: 50px
+    }
+    .tomonlar2 .left_block .title {
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+        width: 90%;
+    }
+    
+    .tomonlar2 .left_block .ant {
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+    }
+    .cards4 {
+        width: 350px;
+        height: 1600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    .tomonlar4{
+        height: 1900px;
+    }
+    .tomonlar5{
+        height: 1900px;
+    }
+    .tomonlar6{
+        height: 1900px;
+    }
+}
+@media only screen and (max-width: 821px){
+    .position_card {
+        bottom: -83%;
+        left: 30%;
+
+        
+    }
+}
+@media only screen and (max-width: 500px){
+    .navbar {
+        grid-template-columns: 100%;
+        height: 125px;
+    }
+    .navbar p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .input {
+        width: 90%;
+    }
+    .position_card {
+        bottom: -74%;
+        left: 23%;
+    }
+    .showcase .title {
+        width: 100%;
+        font-family: h_text;
+        font-weight: 700;
+        font-size: 45px;
+        color: #FFFFFF;
+    }
+    .site .main_title{
+        font-size: 25px;
+    }
+    .card_father {
+        display: flex;
+        flex-wrap: wrap;
+        height: 350px;
+        align-items: center;
+        justify-content: space-around;
+        width: 310px;
+    }
+    .header{
+        height:1600px;
+    }
+    .showcase {
+        width: 80%;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .min_title{
+        width: 100%;
+    }
+    .input2 {
+        width: 310px;
+    }
+    .input_button .button button {
+        width: 100px;
+    }
+    .input2 input {
+        width: 150px;
+    }
+    .last_tomon .right{
+        width: 90%;
+        height: 750px;
+    }
+    .last_tomon{
+        height: 1300px;
+    }
+    .input_button{
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .last_tomon .left{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 250px;
+        width: 310px;
+    }
+    .site{
+        height: 17900px;
+    }   
+}
+@media only screen and (max-width: 400px){
+    .input {
+        width: 310px;
+    }
+    .position_card {
+        bottom: -74%;
+        left: 15%;
+    }
+    .input_button .button{
+        width: 170px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .showcase .title {
+        font-size: 35px;
+    }
+    .position_card {
+        bottom: -69.5%;
+        left: 6%;
+        width: 280px;
+    }
+    .header{
+        height:1700px;
+    }
+    .cards4 .card {
+        width: 310px;
+        height: 590px;
+    }
+    
+    .cards4 .card .main_img {
+        width: 280px;
+    }
+    
+    .cards4 .card .name {
+        width: 280px;
+    }
+    
+    .cards4 .card .i_block {
+        width: 280px;
+    }
+    
+    .cards4 .card ul {
+        list-style: none;
+        width: 280px;
+        height: 100px;
+    }
+    
+    .cards4 .card .narx {
+        width: 280px;
+    }
+    
+    .cards4 .card .narx .now_cost {
+        width: 170px;
+    }
+    .cards4 .bg_card {
+        width: 310px;
+        height: 549px;
+    }
+    .cards4 .bg_card .title {
+        width: 280px;
+    }
+    
+    .cards4 .bg_card .ant {
+        width: 280px;
+    }
+    
+    .cards4 .bg_card .bush {
+        width: 280px;
+        height: 100px;
+    }
+    
+    .cards4 .bg_card .matn {
+        width: 280px;
+    }
+    .input2 {
+        width: 280px;
+    }
+    .cards4{
+        width: 310px;
+    }
+}
+/* card title 20px ant 14px */
